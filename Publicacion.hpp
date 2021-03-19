@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include "Usuario.hpp"
 
 using namespace std;
 
@@ -14,8 +15,10 @@ class Publicacion{
 		string texto;
 		string fechaPublicacion;
 	public:
-		void guardarPublicacion(ifstream*);
+		Publicacion();
+		Publicacion(int,string,Usuario*,string,string);
+		~Publicacion();
+		void guardarPublicacion(ofstream*);
 		Publicacion* cargarPublicacion(ifstream*);
 };
-
 #endif

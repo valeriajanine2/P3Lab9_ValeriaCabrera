@@ -15,10 +15,15 @@ class Blog{
 		string nombre = "YouBl0g";
 		vector<Usuario*> usuarios;
 	public:
+		Blog();
+		Blog(string);
+		~Blog();
+		vector<Usuario*> getUsuarios();
+		void setUsuarios(vector<Usuario*>);
 		void verPublicaciones();
 		bool compare(Publicacion*,Publicacion*);
 		void cargarArchivos(string,string);
-		void escribirUsuarios(String);
+		void escribirUsuarios(string);
 		void escrbirPublicaciones(string);
 };
 

@@ -4,9 +4,11 @@
 #include <string>
 #include <vector>
 #include <fstream>
-#include "Publicacion.hpp"
+//#include "Publicacion.hpp"
 
 using namespace std;
+
+class Publicacion;
 
 class Usuario{
 	private:
@@ -28,9 +30,9 @@ class Usuario{
 		bool getAdmin();
 		void setAdmin(bool);
 		vector<Publicacion*> getPublicaciones();
-		void setPublicaciones(vector<Publicacion*>)
-		void guardarPublicacion(ifstream*);
-		Publicacion* cargarPublicacion(ifstream*);
+		void setPublicaciones(vector<Publicacion*>);
+		void guardarUsuario(ofstream*);
+		Usuario* cargarUsuario(ifstream*);
 };
 
 #endif
