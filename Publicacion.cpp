@@ -19,3 +19,7 @@ Publicacion::~Publicacion(){
 void Publicacion::guardarPublicacion(ofstream* o){
 	
 }
+
+Publicacion* Publicacion::cargarPublicacion(ifstream* i){
+	
+}
