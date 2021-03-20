@@ -33,6 +33,8 @@ class Usuario{
 		void setPublicaciones(vector<Publicacion*>);
 		void guardarUsuario(ofstream*);
 		Usuario* cargarUsuario(ifstream*);
+		void agregarPublicacion(Publicacion*);
+		void eliminar(int);
 };
 
 #endif

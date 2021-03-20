@@ -23,3 +23,27 @@ void Publicacion::guardarPublicacion(ofstream* o){
 Publicacion* Publicacion::cargarPublicacion(ifstream* i){
 	
 }
+
+Usuario* Publicacion::getAutor(){
+	return this->autor;
+}
+
+string Publicacion::getTitulo(){
+	return this->titulo;
+}
+
+void Publicacion::setFecha(string fechaPublicacion){
+	this->fechaPublicacion=fechaPublicacion;
+}
+
+void Publicacion::setID(int idPublicacion){
+	this->idPublicacion=idPublicacion;
+}
+
+void Publicacion::setTexto(string texto){
+	this->texto=texto;
+}
+
+void Publicacion::setTitulo(string titulo){
+	this->titulo=titulo;
+}

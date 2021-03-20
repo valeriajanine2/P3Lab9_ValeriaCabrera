@@ -25,6 +25,8 @@ class Blog{
 		void cargarArchivos(string,string);
 		void escribirUsuarios(string);
 		void escrbirPublicaciones(string);
+		void agregarUsuario(Usuario*);
+		void eliminarUser(int);
 };
 
 #endif

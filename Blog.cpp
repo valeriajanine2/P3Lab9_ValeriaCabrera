@@ -10,6 +10,9 @@ Blog::Blog(string nombre){
 
 Blog::~Blog(){
 	//destructor
+	for(int i = 0; i < this->usuarios.size(); i++){
+		delete this->usuarios.at(i);
+	}
 }
 
 vector<Usuario*> Blog::getUsuarios(){
@@ -28,6 +31,10 @@ bool Blog::compare(Publicacion* first, Publicacion* second){
 	return true;
 }
 
+void Blog::eliminarUser(int index){
+	this->usuarios.erase(this->usuarios.begin()+index);
+}
+
 void Blog::cargarArchivos(string a, string b){
 	
 }
@@ -38,4 +45,8 @@ void Blog::escribirUsuarios(string user){
 
 void Blog::escrbirPublicaciones(string a){
 	
+}
+
+void Blog::agregarUsuario(Usuario* u){
+	this->usuarios.push_back(u);
 }

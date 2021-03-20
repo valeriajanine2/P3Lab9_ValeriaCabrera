@@ -20,5 +20,11 @@ class Publicacion{
 		~Publicacion();
 		void guardarPublicacion(ofstream*);
 		Publicacion* cargarPublicacion(ifstream*);
+		string getTitulo();
+		Usuario* getAutor();
+		void setID(int);
+		void setTitulo(string);
+		void setTexto(string);
+		void setFecha(string);
 };
 #endif
